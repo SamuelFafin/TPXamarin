@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Swaguin.ContactList"
+             xmlns:local="clr-namespace:Swaguin.ViewModel;assembly=Swaguin"
+             Title="ContactList">
+    <ContentPage.BindingContext>
+        <local:ContactListViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="5,20,5,5" Android="5,0,5,5" WinPhone="5,0,5,5" />
+    </ContentPage.Padding>
+
+    <ListView>
+
+    </ListView>
+</ContentPage>
